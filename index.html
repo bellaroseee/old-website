@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bella rose</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/smallscreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="css/widescreen.css">
+    <!-- main javascript -->
+    <script src="javascript/myscript.js" async></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/42f0437386.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">-->
+</head>
+
+<body>
+<!-- desktop display -->
+<div class="wide-container">
+    <!-- main title-->
+    <div class="mainTitle">
+        <h1 id="title" class="title"></h1>
+    </div>
+    <!-- end of main title-->
+
+    <!-- svg : main background  -->
+    <div class="svg-main">
+        <!-- svg : monitor -->
+        <svg width="700" height="700" class="monitor-container">
+            <rect class="desk" x="0%" y=80% width="100%" height="50%"/>
+            <rect class="rectangle-base" x="32%" y="80%" width="245" height="60" rx="5" ry="5"/>
+            <rect class="rectangle-monitor-stand" x="42%" y="65%" width="100" height="130"/>
+            <rect class="rectangle-screen" x="8%" y = "10%" width=595 height=400 rx="20" ry="20"/>
+        </svg>
+        <!-- end of svg : monitor -->
+
+        <!-- main content -->
+        <div class="main-content-container" id="main-content-container">
+            <div class="nav-default">
+                <ul>
+                    <li id="projects" onclick="showWorks()">projects</li> |
+                    <li id="experience" onclick="showOthers()">leadership & work experience</li> |
+                    <li id="education" onclick="showEducation()">education</li>
+                </ul>
+            </div>
+            <div class="projects-content" id="projects-content">
+                <ul>
+                    <li class="main-li">Website Project <br>
+                        <i class="sub-text">personal project | May 2020 </i>
+                        <ul>
+                            <li class="inner-li">Built an interactive website with <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong></li>
+                            <li class="inner-li">The website’s first version has more information about my projects and myself, and is made responsive for phone and desktop view.</li>
+                        </ul>
+                    </li>
+                    <li class="main-li">Custom WordPress Development <br>
+                        <i class="sub-text">Skagit Valley College library website | May 2018 – May 2019</i>
+                        <ul>
+                            <li class="inner-li">Planned, researched and developed a custom <strong>WordPress</strong> theme from Divi Theme framework
+                                that extends the main website, with the focus on friendly user interface and simplified data base search.
+                            </li>
+                            <li class="inner-li">Worked in WordPress environment, <strong>php</strong> and <strong>CSS</strong> (self-taught).
+                            </li>
+                            <li class="inner-li">Next step in the project is to improve the user-experience of the website administration
+                                and customization, for it to be handed over to the library faculties.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-li">What am I doing with my life? <br>
+                        <i class="sub-text">personal project | July 2019 - present</i>
+                        <ul>
+                            <li class="inner-li">Building an Android application to select a ‘highlight’ from selected day, week, or
+                                month determined by the longest hours spent at a location provided from google timeline data.</li>
+                            <li class="inner-li">Written in <strong>Java</strong> with <strong>Apache POI</strong> and <strong>Maven</strong>. Done in <strong>Android Studio</strong> for demonstration and
+                                testing stages. </li>
+                            <li class="inner-li">Continued work in the project to incorporate the data from google / outlook calendar to
+                                improve the algorithm for determining the ‘highlight.’</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="experience-content" id="experience-content">
+                <ul>
+                    <li class="main-li">Treasurer<br>
+                        <i class="sub-text"> Associated Students of Skagit Valley College | September 2018 – June 2019</i>
+                        <ul>
+                            <li class="inner-li">Elected as student body treasurer responsible for organizing and keeping track of 3 different budgets for various student activities</li>
+                            <li class="inner-li">Chaired the sub-committee Student Technology Fee and Service and Activity Fee committee responsible for listening to budget presentations from student groups and supporting services, moderating the evaluation ensuring various stakeholders are represented, and awarding proposals according to impacts, importance and guidelines. </li>
+                        </ul>
+                    </li>
+                    <li class="main-li">Math Tutor<br>
+                        <i class="sub-text">Tutoring Center @ Skagit Valley College | January 2018 – June 2019</i>
+                        <ul>
+                            <li class="inner-li">Spent 10 hours per week providing drop-in and one-on-one tutoring services for various math subjects including algebra, geometry, pre-calculus, calculus and linear algebra</li>
+                            <li class="inner-li">Developed a quarter-long lesson plan for one-on-one tutees, based on learning styles and skill levels, motivating the tutees to excel in their class</li>
+                        </ul>
+                    </li>
+                    <li class="main-li">President<br>
+                        <i class="sub-text">Computing Club @ Skagit Valley College | September 2018 – June 2019</i>
+                        <ul>
+                            <li class="inner-li">Developed a lesson plan for and taught the club members to learn Java programming, based on the skill levels and learning goals, using resources like textbooks and google Kickstart archives. The curriculum was tailored to student interest and usability. Students have increased familiarity with Java, HTML, or Phyton at the end of the year.</li>
+                            <li class="inner-li">Facilitated in depth discussion for mathematical logic and algorithm from google Hash Code archives and problems brought by club members.</li>
+                            <li class="inner-li">Planned, researched and led a small-scale project at the end of the school year, which is an emoji-to-ASCII program using Java and ImageMajick (C / C++).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="education-content" id="education-content">
+                <ul>
+                    <li class="main-li">B.S. Computer Science<br>
+                        <p class = "sub-ed">
+                            <i class="sub-text">University of Washington – Seattle, WA</i><br>
+                        Expected Graduation: June 2021<br>
+                        GPA: 3.23<br>
+                        Data Science Track</p>
+                    </li>
+                    <li class="main-li">A.S. Associate in Science Transfer<br>
+                        <p class="sub-ed">
+                        <i class="sub-text">Skagit Valley College – Mount Vernon, WA</i><br>
+                        Graduated: June 2019<br>
+                        GPA:  3.98<br>
+                        President’s Medal, CS Departmental Honors
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of main content -->
+    </div>
+    <!-- end of svg -->
+
+    <!-- svg : about me -->
+    <div class="svg-about-me">
+        <svg width="100" height="100" class="post-it">
+            <rect class="post-it-about-me" width="100%" height="100%"/>
+        </svg>
+        <div class="about-me-default" id="about-me-default">
+            <p id="about-me" onclick="showAboutMe()">About me</p>
+        </div>
+    </div>
+    <!-- end of svg  -->
+
+    <!--  about me hidden content  -->
+    <div class="about-me-content" id="about-me-content">
+        <i class="fas fa-times" id="close-about-me" onclick="showAboutMe()"></i>
+        <img src="images/profile.jpg" alt="profile picture" class="profile-picture">
+        <p class="about-me-paragraph">
+            Hi There! I am Bella Rose, a third year CSE student @ University of Washington.
+            <br>I grew up in Indonesia 🇮🇩 -> Singapore 🇸🇬 -> USA 🇺🇸
+            <br>Other than studying 📜 and programming 💻, here is a list of things that I enjoy:
+            <ul class="about-me-paragraph">
+                <li class="about-me-li">painting 🎨📔</li>
+                <li class="about-me-li">cooking 🍳🍛🌶️</li>
+                <li class="about-me-li">enjoying nature🐈🐈🐈🌲🌊</li>
+                <li class="about-me-li">listening to music 🎶</li>
+                <li class="about-me-li">memes</li>
+                <li class="about-me-li">endless struggle to organize my life 📝¯\_(ツ)_/¯</li>
+                <li class="about-me-li">r/idiotsincars 🚗💥</li>
+            </ul>
+        <ul>
+            <li class="socials"><a href="https://www.linkedin.com/in/brose714"><i class="fab fa-linkedin" id="social-icon-li"></i></a>
+            </li>
+            <li class="socials"><a href="https://github.com/bellaroseee"><i class="fab fa-github" id="social-icon-gh"></i></a>
+            </li>
+            <li class="socials"><a href="mailto:brose.workspace@gmail.com"><i class="far fa-envelope" id="social-icon-mail"></i></a></li>
+        </ul>
+    </div>
+    <!-- end of about me content -->
+</div>
+<!-- end of desktop display-->
+
+<!-- phone display -->
+<div class="phoneContainer">
+    <!-- header -->
+    <div class="phoneNav">
+        <span class="phoneNavIcon" onclick="showAboutMeSmall()">
+            <i class = "fas fa-bars"></i>
+        </span>
+        <span class="mainTitle">
+            Hello, world!
+        </span>
+        <span></span>
+    </div>
+    <!--  end of header  -->
+
+    <!-- main svg  -->
+    <div class="svg-main">
+        <svg width="300" height="300" class="monitor">c
+            <rect class="rectangle-base" x="32%" y="80%" width="35%" height="8.5%" rx="5" ry="5"/>
+            <!--    <polygon points="10,0 30,30 50,50, 10,0"></polygon>-->
+            <rect class="rectangle-monitor-stand" x="42%" y="65%" width="14.2%" height="18.6%"/>
+            <rect class="rectangle-screen" x="8%" y = "10%" width="85%" height="58%" rx="10" ry="10"/>
+        </svg>
+    </div>
+    <!-- end of main svg -->
+
+    <!-- navigation -->
+    <div class="nav-container" id="nav-container">
+        <div class="works-default">
+            <ul>
+                <li id="projects-small" onclick="showWorksSmall()">projects</li>
+                <li id="experience-small" onclick="showOthersSmall()">leadership & work experience</li>
+                <li id="education-small" onclick="showEducationSmall()">education</li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of navigation -->
+
+
+    <!-- main content -->
+    <div class="main-content-container-small" id="main-content-container-small">
+        <i class="fas fa-times" id="close-about-me-small" onclick="closeWindow()"></i>
+        <div class="projects-content-small" id="projects-content-small">
+            <ul>
+                <li class="main-li">website project <br>
+                    <i class="sub-text">personal project | May 2020 </i>
+                    <ul>
+                        <li class="inner-li">Built an interactive website with <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong></li>
+                        <li class="inner-li">The website’s first version has more information about my projects and myself, and is made responsive for phone and desktop view.</li>
+                    </ul>
+                </li>
+                <li class="main-li">Custom WordPress Development <br>
+                    <i class="sub-text">Skagit Valley College library website | May 2018 – May 2019</i>
+                    <ul>
+                        <li class="inner-li">Planned, researched and developed a custom WordPress theme from Divi Theme framework
+                            that extends the main website, with the focus on friendly user interface and simplified data base search.
+                        </li>
+                        <li class="inner-li">Worked in WordPress environment, php and CSS (self-taught).
+                        </li>
+                        <li class="inner-li">Next step in the project is to improve the user-experience of the website administration
+                            and customization, for it to be handed over to the library faculties.
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-li">What am I doing with my life? <br>
+                    <i class="sub-text">personal project | July 2019 - present</i>
+                    <ul>
+                        <li class="inner-li">Building an Android application to select a ‘highlight’ from selected day, week, or
+                            month determined by the longest hours spent at a location provided from google timeline data.</li>
+                        <li class="inner-li">Written in Java with Apache POI and Maven. Done in Android Studio for demonstration and
+                            testing stages. </li>
+                        <li class="inner-li">Continued work in the project to incorporate the data from google / outlook calendar to
+                            improve the algorithm for determining the ‘highlight.’</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="experience-content-small" id="experience-content-small">
+            <ul>
+                <li class="main-li">Treasurer<br>
+                    <i class="sub-text"> Associated Students of Skagit Valley College | September 2018 – June 2019</i>
+                    <ul>
+                        <li class="inner-li">Elected as student body treasurer responsible for organizing and keeping track of 3 different budgets for various student activities</li>
+                        <li class="inner-li">Chaired the sub-committee Student Technology Fee and Service and Activity Fee committee responsible for listening to budget presentations from student groups and supporting services, moderating the evaluation ensuring various stakeholders are represented, and awarding proposals according to impacts, importance and guidelines. </li>
+                    </ul>
+                </li>
+                <li class="main-li">Math Tutor<br>
+                    <i class="sub-text">Tutoring Center @ Skagit Valley College | January 2018 – June 2019</i>
+                    <ul>
+                        <li class="inner-li">Spent 10 hours per week providing drop-in and one-on-one tutoring services for various math subjects including algebra, geometry, pre-calculus, calculus and linear algebra</li>
+                        <li class="inner-li">Developed a quarter-long lesson plan for one-on-one tutees, based on learning styles and skill levels, motivating the tutees to excel in their class</li>
+                    </ul>
+                </li>
+                <li class="main-li">President<br>
+                    <i class="sub-text">Computing Club @ Skagit Valley College | September 2018 – June 2019</i>
+                    <ul>
+                        <li class="inner-li">Developed a lesson plan for and taught the club members to learn Java programming, based on the skill levels and learning goals, using resources like textbooks and google Kickstart archives. The curriculum was tailored to student interest and usability. Students have increased familiarity with Java, HTML, or Phyton at the end of the year.</li>
+                        <li class="inner-li">Facilitated in depth discussion for mathematical logic and algorithm from google Hash Code archives and problems brought by club members.</li>
+                        <li class="inner-li">Planned, researched and led a small-scale project at the end of the school year, which is an emoji-to-ASCII program using Java and ImageMajick (C / C++).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="education-content-small" id="education-content-small">
+            <ul>
+                <li class="main-li">B.S. Computer Science<br>
+                    <p class = "sub-ed">
+                        <i class="sub-text">University of Washington – Seattle, WA</i><br>
+                        Expected Graduation: June 2021<br>
+                        GPA: 3.23<br>
+                        Data Science Track</p>
+                </li>
+                <li class="main-li">A.S. Associate in Science Transfer<br>
+                    <p class="sub-ed">
+                        <i class="sub-text">Skagit Valley College – Mount Vernon, WA</i><br>
+                        Graduated: June 2019<br>
+                        GPA:  3.98<br>
+                        President’s Medal, CS Departmental Honors
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="about-me-content-small" id="about-me-content-small">
+            <img src="images/profile.jpg" alt="profile picture-small" class="profile-picture-small">
+            <p class="about-me-paragraph">
+                Hi There! I am Bella Rose, a third year CSE student @ University of Washington.
+                <br>I grew up in Indonesia 🇮🇩 -> Singapore 🇸🇬 -> USA 🇺🇸
+                <br>Other than studying 📜 and programming 💻, here is a list of things that I enjoy:
+            <ul class="about-me-paragraph">
+                <li class="about-me-li">painting 🎨📔</li>
+                <li class="about-me-li">cooking 🍳🍛🌶️</li>
+                <li class="about-me-li">enjoying nature🐈🐈🐈🌲🌊</li>
+                <li class="about-me-li">listening to music 🎶</li>
+                <li class="about-me-li">memes</li>
+                <li class="about-me-li">endless struggle to organize my life 📝¯\_(ツ)_/¯</li>
+                <li class="about-me-li">r/idiotsincars 🚗💥</li>
+            </ul>
+            <ul class="socials-ul">
+                <li class="socials"><a href="https://www.linkedin.com/in/brose714"><i class="fab fa-linkedin" id="social-icon-li-small"></i></a>
+                </li>
+                <li class="socials"><a href="https://github.com/bellaroseee"><i class="fab fa-github" id="social-icon-gh-small"></i></a>
+                </li>
+                <li class="socials"><a href="mailto:brose.workspace@gmail.com"><i class="far fa-envelope" id="social-icon-mail-small"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of main content-->
+</div>
+<!-- end of phone display -->
+
+
+<!-- footer -->
+<div class="footer">
+    <small>&copy; Copyright 2020, Bella Rose</small>
+</div>
+<!-- end of footer -->
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+.phoneContainer {
+    display: none;
+}
+
+/* Main Title */
+.mainTitle {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-family: 'Varela Round', sans-serif;
+}
+/* end of Main Title */
+
+
+/* SVG : Monitor*/
+.monitor-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.desk {
+    fill: var(--desk);
+}
+/* end of SVG : Monitor */
+
+
+/* SVG : Post It */
+.post-it {
+    position: fixed;
+    top: 35%;
+    left: 10%;
+}
+
+.post-it-hidden {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+}
+
+.post-it-about-me {
+    fill: var(--postit);
+}
+/* end of SVG : Post It */
+
+
+/* Navigation */
+.nav-default {
+    margin-bottom: 10px;
+}
+
+#projects:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#experience:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#education:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#projects, #experience, #education {
+    display: inline;
+}
+/* end of Navigation */
+
+
+/* About Me */
+.about-me-default {
+    position: fixed;
+    top: 39%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    transform: translate(0% 20%);
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+.about-me-paragraph {
+    font-size: 12px;
+}
+
+.about-me-default:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#close-about-me {
+    position: relative;
+    top: -95px;
+    left: 160px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.about-me-content {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 250px;
+    height: 700px;
+    background-color: #F9AFA2;
+    padding: 20px 20px;
+    border: 3px solid black;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+#social-icon-gh {
+    font-size: 1.5em;
+    color: var(--screen)
+}
+
+#social-icon-li {
+    font-size: 1.5em;
+    color: var(--screen)
+}
+
+#social-icon-mail {
+    font-size: 1.5em;
+    color: var(--screen);
+}
+/* end of About Me */
+
+
+/* Main Content */
+.main-content-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 595px;
+    height: 400px;
+    text-align: center;
+    transform: translate(-50%, -72%);
+    padding: 30px 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    overflow: hidden;
+}
+
+.projects-content {
+    display: none;
+    width: 550px;
+    height: 330px;
+    padding: 5px 10px 10px 10px;
+    text-align: left;
+    overflow: auto;
+}
+
+.experience-content {
+    display: none;
+    width: 550px;
+    height: 330px;
+    padding: 5px 10px 10px 10px;
+    text-align: left;
+    overflow: auto;
+}
+
+.education-content {
+    display: none;
+    width: 550px;
+    height: 330px;
+    padding: 5px 10px 10px 10px;
+    text-align: left;
+    overflow: auto;
+}
+/* end of Main Content */

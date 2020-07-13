@@ -1,0 +1,131 @@
+:root {
+  --postit: #F8A598;
+  --screen: #0A0908;
+  --monitor: #C2C3C2;
+  --desk: #A9927D;
+  --backgroundColor:#E1E2C6;
+          /*#FEF5D6;*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--backgroundColor);
+}
+.wide-container {
+  display: flex;
+  align-items: center;
+}
+
+.mainTitle {
+  /*font-family: 'Homemade Apple', cursive;*/
+  font-family: 'Varela Round', sans-serif;
+}
+
+.rectangle-screen {
+  fill: var(--screen);
+  stroke: var(--monitor);
+  stroke-width: 15;
+}
+
+.rectangle-monitor-stand {
+  fill: var(--monitor);
+}
+
+.rectangle-base {
+  fill: var(--monitor);
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
+  position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Varela Round', sans-serif;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    display: none;
+  }
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-li {
+  padding-left: 1.3em;
+  padding-bottom: 0.5em;
+  font-size: 16px;
+}
+
+.main-li:before {
+  content: "\f054";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+
+.inner-li {
+  padding-left: 1.3em;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.inner-li:before {
+  content: "\f1ce";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.5em; /* same as padding-left set on li */
+  width: 1.5em; /* same as padding-left set on li */
+}
+
+.about-me-li {
+  padding-left: 1.3em;
+}
+
+.about-me-li:before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.5em; /* same as padding-left set on li */
+  width: 1.5em; /* same as padding-left set on li */
+}
+/* end of List */
+
+/* Texts */
+.about-me-paragraph {
+  font-size: 11px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.sub-text {
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.sub-ed {
+  font-size: 13px;
+}
+
+.socials {
+  display: inline;
+  text-align: center;
+}
+
+.socials-ul {
+  margin-top: 10px;
+}
+/* end of Texts */

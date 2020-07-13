@@ -1,0 +1,135 @@
+.wide-container {
+    display: none;
+}
+
+/* Header */
+.phoneNav {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem 1.5rem;
+}
+
+.phoneNavIcon {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: var(--postit);
+}
+
+.mainTitle {
+    font-size: 30px;
+    padding-left: -20px;
+}
+/* end of Header */
+
+
+/* SVG : Monitor*/
+.svg-main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.rectangle-screen {
+    stroke-width: 10;
+}
+/* end of SVG : Monitor */
+
+
+/* Navigation */
+.nav-container {
+    position: relative;
+    left: calc(100vw / 2 - 50px);
+    top: -250px;
+    width: 100px;
+    font-family:  'Roboto Mono', monospace;
+    color: white;
+}
+
+#projects-small, #experience-small, #education-small {
+    padding-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+}
+/* end of Navigation */
+
+
+/* Main Content */
+.main-content-container-small {
+    display: none;
+    position: fixed;
+    top: 40%;
+    width: 100%;
+    height: 55%;
+    background-color: var(--desk);
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.projects-content-small {
+    display: none;
+    padding: 0px 20px 20px 20px;
+    height: 100%;
+    text-align: left;
+    overflow: auto;
+}
+
+.experience-content-small {
+    display: none;
+    padding: 0px 20px 20px 20px;
+    height: 100%;
+    text-align: left;
+    overflow: auto;
+}
+
+.education-content-small {
+    display: none;
+    padding: 0px 20px 20px 20px;
+    height: 100%;
+    text-align: left;
+    overflow: auto;
+}
+
+.about-me-content-small {
+    display: none;
+    padding: 20px 20px 20px 30px;
+    height: 100%;
+    text-align: center;
+    overflow: auto;
+}
+
+.profile-picture-small {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+#social-icon-gh-small {
+    font-size: 1.5em;
+    color: var(--screen);
+}
+
+#social-icon-li-small {
+    font-size: 1.5em;
+    color: var(--screen);
+}
+
+#social-icon-mail-small {
+    font-size: 1.5em;
+    color: var(--screen);
+}
+
+#close-about-me-small {
+    position: relative;
+    left:calc(100vw - 5%);
+    top: 5px;
+}
+/* end of Main Content */
+
