@@ -1,2 +1,4 @@
-# Old Portfolio Website with HTML, CSS and JavaScript
+# Old Portfolio Website 
+one page website built with HTML, CSS and JavaScript. 
+
 ## Demo
